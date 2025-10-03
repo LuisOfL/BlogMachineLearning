@@ -168,8 +168,9 @@ p {
 
 .graph-placeholder {
     background: rgba(25, 25, 26, 0.7);
-    height: 200px;
+    padding: 2rem;
     display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a la siguiente línea */
     align-items: center;
     justify-content: center;
     border-radius: 8px;
@@ -177,7 +178,15 @@ p {
     color: #8b5cf6;
     font-weight: bold;
     border: 2px dashed rgba(139, 92, 246, 0.3);
+    gap: 1rem; /* Espacio entre imágenes */
 }
+
+.graph-placeholder img {
+    width: 45%; /* Cada imagen ocupa casi la mitad del contenedor */
+    height: auto;
+    border-radius: 4px; /* opcional */
+}
+
 
 /* Listas */
 ul {
