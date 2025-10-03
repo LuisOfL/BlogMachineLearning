@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">MachineLearning</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Conceptos</a></li>
+                        <li><a href="#">Algoritmos</a></li>
+                        <li><a href="#">Aplicaciones</a></li>
+                        <li><a href="#">Recursos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Introducción al Machine Learning</h1>
+            <p>Descubre cómo las máquinas pueden aprender de los datos y realizar predicciones automáticamente</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="content">
+            <main class="main-content">
+                <h2>¿Qué es el Machine Learning?</h2>
+                
+                <div class="highlight">
+                    <p>¿Alguna vez te has preguntado cómo las empresas son capaces de procesar tantos datos?</p>
+                    <p>Imagina que quieres hacer un test para saber cuántas horas estudia un estudiante y su promedio escolar, de repente vez que tienes 10M de respuestas ¿Cómo piensas contar tantos datos?</p>
+                    <p>¿Pedirías ayuda a 100 personas? Eso no tendría sentido en esta época, para eso existe el machine learning.</p>
+                </div>
+                
+                <p>El <strong>Machine Learning (ML)</strong> o <strong>Aprendizaje Automático</strong> es un tipo de Inteligencia Artificial (IA) que le da a las computadoras la capacidad de aprender de los datos sin ser programadas explícitamente para cada tarea específica.</p>
+                
+                <p>En palabras más simples, tu computadora va a hacer el trabajo por ti. No tendrás que contar los 10M uno por uno y además, podrás predecir, por ejemplo, qué calificación tendré si estudio 6hrs.</p>
+                
+                <p>Esto suena genial, ¿no? Lo que solían hacer varias personas, puede ser realizado por una persona.</p>
+                
+                <h3>Analicemos el ejemplo dado:</h3>
+                
+                <div class="example-box">
+                    <p><strong>Instrucciones:</strong> Dado 10M de datos con horas estudiadas y una calificación, predice qué sacaré si estudio 4hrs. Supón que las 10M de personas contestaron los dos campos, por lo que no hay datos nulos. Puede haber el caso de que los datos estén incompletos o que en calificación Panchito puso 90 y Fulano 9.0, pero para más simplicidad vamos a suponer que los datos son uniformes.</p>
+                </div>
+                
+                <h3>¿Qué debemos hacer?</h3>
+                
+                <p>Sabemos que cuanto más estudies, mejores calificaciones tendrás. Depende la calidad de estudio, pero en general funciona así. Entonces sabemos que los datos tienen una tendencia fácil de encontrar. Para poder tener una mejor referencia, vamos a visualizar los datos en un plano, suponiendo para este caso 10 datos, donde las horas estudiadas son x y la calificación es y.</p>
+                
+                <div class="visualization">
+                    <h4>Visualización de datos</h4>
+                    <div class="graph-placeholder">
+                        Gráfica de dispersión: Horas estudiadas vs Calificación
+                    </div>
+                    <p>Ahora, después de ver la gráfica, lo tenemos más claro: se forma una recta que sube conforme avanza. Esto se puede resumir a: "si estudio más horas, tendré mejores calificaciones".</p>
+                </div>
+                
+                <h3>Selección del modelo</h3>
+                
+                <p>Como se había mencionado antes, hay varios modelos de machine learning. ¿Cuál deberíamos usar?</p>
+                
+                <p>"Quiero saber mi calificación si estudio 6 horas." Entonces, conozco las horas de estudio, pero no conozco la calificación; es lo que quiero saber.</p>
+                
+                <p>¿Qué tipo es calificación? ¿Es un valor numérico? ¿Es una variable continua o discreta?</p>
+                
+                <ul>
+                    <li><strong>Variable continua:</strong> Incluye números con punto decimal.</li>
+                    <li><strong>Variable discreta:</strong> Son solo números enteros.</li>
+                </ul>
+                
+                <p>Entonces, sé que la calificación es un valor numérico y es una variable discreta. El modelo que más se ajusta a mis necesidades es: <strong>Regresión Lineal</strong>.</p>
+                
+                <h2>Regresión Lineal</h2>
+                
+                <p>El primer modelo que vamos a ver es regresión lineal. Es mas fácil de lo que parece, si entiendes la parte matemática primero y después la parte algorítmica.</p>
+                
+                <h3>¿Qué es Regresión Lineal?</h3>
+                
+                <p>Vamos a usar la grafica anteriormente vista, si te das cuenta podemos trazar una linea que se ajuste a la mayor cantidad de datos.</p>
+                
+                <p>De las siguientes graficas grafica con la mente la linea que mas se ajusta a los datos.</p>
+                
+                <div class="visualization">
+                    <h4>Encuentra la línea que mejor se ajusta</h4>
+                    <div class="graph-placeholder">
+                        Gráfica de dispersión con posibles líneas de ajuste
+                    </div>
+                    <p>Fácil, ¿no? Eso es regresión lineal, nada del otro mundo, el pequeño problema está en encontrar esa recta matemáticamente y luego codificar.</p>
+                </div>
+                
+                <p>Hay varias maneras de hacerlo, desde métodos numéricos como gradiente descendiente que implica derivadas y es más óptimo para datos grandes, hasta un método muy fácil llamado mínimos cuadrados el cual es pura álgebra.</p>
+                
+                <h3>Fórmulas de Regresión Lineal</h3>
+                
+                <div class="formula">
+                    y = a + bx
+                </div>
+                
+                <div class="formula">
+                    b = Σ[(xi - x̄)(yi - ȳ)] / Σ[(xi - x̄)²]
+                </div>
+                
+                <div class="formula">
+                    a = ȳ - bx̄
+                </div>
+                
+                <h3>¿Qué significa cada cosa?</h3>
+                
+                <p>Tenemos 3 fórmulas, la primera estoy seguro de que ya sabes cual es, es correcto, es la formula de la recta punto pendiente, es obvio no? queremos encontrar una recta, b es la pendiente es lo que hace que la recta gire por decirlo de una manera, el lugar a donde apunta la recta depende de la pendiente, y a es la altura, con estos parámetros podemos trazar infinitas rectas, alguna debe ser la nuestra.</p>
+                
+                <p>Ya sabemos que con la pendiente m y el altura a, podemos tener infinitas rectas y alguna debe ser la que estamos buscando.</p>
+                
+                <p>Si vemos ya tenemos la formula para b y a, entonces solo tenemos que hacer operaciones básicas y listo tendremos nuestra recta que se ajusta a nuestros datos.</p>
+                
+                <h3>¿Cómo iniciarías?</h3>
+                
+                <p>Si te das cuenta para a, necesitas b, simplemente sacas b luego a y finalmente tu ecuación de la recta.</p>
+                
+                <p>Sabemos que x̄ : es el promedio de x, donde x es un conjunto de datos.</p>
+                
+                <p>Por ejemplo si tenemos 3,5,2,1 -> la media o promedio es (3+5+2+1)/4 ¿Por qué 4? porque es el numero de elementos de mi conjunto.</p>
+            </main>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>LuisMData</p>
+        </div>
+    </footer>
+</body>
+</html>
