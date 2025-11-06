@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Blog</title>
+    <title>Blog de Machine Learning</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
                 <div class="logo">MachineLearning</div>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Inicio</a></li>
                     </ul>
                 </nav>
             </div>
@@ -22,73 +22,73 @@
     
     <section class="hero">
         <div class="container">
-            <h1>Introduction to Machine Learning</h1>
-            <p>Discover how machines can learn from data and make predictions automatically</p>
+            <h1>Introducción al Machine Learning</h1>
+            <p>Descubre cómo las máquinas pueden aprender de los datos y hacer predicciones automáticamente</p>
         </div>
     </section>
     
     <div class="container">
         <div class="content">
             <main class="main-content">
-                <h2>What is Machine Learning?</h2>
+                <h2>¿Qué es el Machine Learning?</h2>
                 
                 <div class="highlight">
-                    <p>Have you ever wondered how companies are able to process so much data?</p>
-                    <p>Imagine you want to conduct a survey to find out how many hours students study and their GPA, and suddenly you have 10M responses. How would you count so much data?</p>
-                    <p>Would you ask 100 people for help? That wouldn't make sense in this day and age. This is where machine learning comes in.</p>
+                    <p>¿Alguna vez te has preguntado cómo las empresas pueden procesar tantos datos?</p>
+                    <p>Imagina que quieres hacer una encuesta para saber cuántas horas estudian los estudiantes y su GPA, y de repente tienes 10 millones de respuestas. ¿Cómo contarías tantos datos?</p>
+                    <p>¿Pedirías ayuda a 100 personas? Eso no tendría sentido en estos tiempos. Aquí es donde entra el machine learning.</p>
                 </div>
                 
-                <p><strong>Machine Learning (ML)</strong> is a type of Artificial Intelligence (AI) that gives computers the ability to learn from data without being explicitly programmed for each specific task.</p>
+                <p><strong>Machine Learning (ML)</strong> es un tipo de Inteligencia Artificial (IA) que le da a las computadoras la capacidad de aprender de los datos sin estar programadas explícitamente para cada tarea específica.</p>
                 
-                <p>In simpler terms, your computer will do the work for you. You won't have to count the 10M responses one by one, and you'll even be able to predict, for example, what grade I would get if I study 6 hours.</p>
+                <p>En términos más simples, tu computadora hará el trabajo por ti. No tendrás que contar las 10 millones de respuestas una por una, e incluso podrás predecir, por ejemplo, qué calificación obtendría si estudio 6 horas.</p>
                 
-                <p>This sounds great, doesn't it? What used to require several people can now be done by one person.</p>
+                <p>Esto suena genial, ¿verdad? Lo que antes requería varias personas ahora puede hacerlo una sola persona.</p>
                 
-                <h3>Let's analyze the given example:</h3>
+                <h3>Analicemos el ejemplo dado:</h3>
                 
                 <div class="example-box">
-                    <p><strong>Instructions:</strong> Given 10M data points with hours studied and a grade, predict what I will get if I study 4 hours. Assume that all 10M people answered both fields, so there are no null values. There might be cases where data is incomplete or where Panchito put 90 for grade and Fulano put 9.0, but for simplicity, let's assume the data is uniform.</p>
+                    <p><strong>Instrucciones:</strong> Dados 10 millones de puntos de datos con horas estudiadas y una calificación, predice qué obtendré si estudio 4 horas. Supón que las 10 millones de personas respondieron ambos campos, por lo que no hay valores nulos. Podría haber casos donde los datos estén incompletos o donde Panchito puso 90 para la calificación y Fulano puso 9.0, pero para simplificar, asumamos que los datos son uniformes.</p>
                 </div>
                 
-                <h3>What should we do?</h3>
+                <h3>¿Qué debemos hacer?</h3>
                 
-                <p>We know that the more you study, the better grades you get. It depends on the quality of study, but in general it works that way. So we know the data has an easy-to-find trend. To get a better reference, let's visualize the data on a plane, assuming for this case 10 data points, where hours studied are x and the grade is y.</p>
+                <p>Sabemos que mientras más estudies, mejores calificaciones obtienes. Depende de la calidad del estudio, pero en general funciona así. Entonces sabemos que los datos tienen una tendencia fácil de encontrar. Para tener una mejor referencia, visualicemos los datos en un plano, asumiendo para este caso 10 puntos de datos, donde las horas estudiadas son x y la calificación es y.</p>
                 
                 <div class="visualization">
-                    <h4>Data Visualization</h4>
+                    <h4>Visualización de Datos</h4>
                     <div class="graph-placeholder">
                        <img src="image/1.png">
                     </div>
-                    <p>Now, after looking at the graph, it's clearer: a line forms that rises as it progresses. This can be summarized as: "if I study more hours, I'll get better grades."</p>
+                    <p>Ahora, después de mirar el gráfico, está más claro: se forma una línea que sube a medida que avanza. Esto se puede resumir como: "si estudio más horas, obtendré mejores calificaciones".</p>
                 </div>
                 
-                <h3>Model Selection</h3>
+                <h3>Selección del Modelo</h3>
                 
-                <p>As mentioned before, there are several machine learning models. Which one should we use?</p>
+                <p>Como se mencionó antes, existen varios modelos de machine learning. ¿Cuál deberíamos usar?</p>
                 
-                <p>"I want to know my grade if I study 6 hours." So, I know the study hours, but I don't know the grade; that's what I want to find out.</p>
+                <p>"Quiero saber mi calificación si estudio 6 horas." Entonces, conozco las horas de estudio, pero no sé la calificación; eso es lo que quiero averiguar.</p>
                 
-                <p>What type is grade? Is it a numerical value? Is it a continuous or discrete variable?</p>
+                <p>¿Qué tipo es la calificación? ¿Es un valor numérico? ¿Es una variable continua o discreta?</p>
                 
                 <ul>
-                    <li><strong>Continuous variable:</strong> Includes numbers with decimal points.</li>
-                    <li><strong>Discrete variable:</strong> Only whole numbers.</li>
+                    <li><strong>Variable continua:</strong> Incluye números con puntos decimales.</li>
+                    <li><strong>Variable discreta:</strong> Solo números enteros.</li>
                 </ul>
                 
-                <p>So, I know that grade is a numerical value and it's a discrete variable. The model that best fits my needs is: <strong>Linear Regression</strong>.</p>
+                <p>Entonces, sé que la calificación es un valor numérico y es una variable discreta. El modelo que mejor se adapta a mis necesidades es: <strong>Regresión Lineal</strong>.</p>
                 
-                <h2>Linear Regression</h2>
+                <h2>Regresión Lineal</h2>
                 
-                <p>The first model we're going to look at is linear regression. It's easier than it seems, if you understand the mathematical part first and then the algorithmic part.</p>
+                <p>El primer modelo que vamos a ver es la regresión lineal. Es más fácil de lo que parece, si entiendes primero la parte matemática y luego la parte algorítmica.</p>
                 
-                <h3>What is Linear Regression?</h3>
+                <h3>¿Qué es la Regresión Lineal?</h3>
                 
-                <p>Let's use the graph we saw earlier. If you notice, we can draw a line that fits the majority of the data points.</p>
+                <p>Usemos el gráfico que vimos anteriormente. Si te fijas, podemos dibujar una línea que se ajuste a la mayoría de los puntos de datos.</p>
                 
-                <p>From the following graphs, mentally draw the line that best fits the data.</p>
+                <p>De los siguientes gráficos, dibuja mentalmente la línea que mejor se ajuste a los datos.</p>
                 
                 <div class="visualization">
-                    <h4>Find the Best-Fitting Line</h4>
+                    <h4>Encuentra la Línea de Mejor Ajuste</h4>
                     <div class="graph-placeholder">
                         <img src="image/2.png">
                         <img src="image/3.png">
@@ -96,12 +96,12 @@
                         <img src="image/4.png">
                         <img src="image/5.png">
                     </div>
-                    <p>Easy, isn't it? That's linear regression, nothing out of this world. The small problem is finding that line mathematically and then coding it.</p>
+                    <p>Fácil, ¿verdad? Eso es regresión lineal, nada del otro mundo. El pequeño problema es encontrar esa línea matemáticamente y luego programarla.</p>
                 </div>
                 
-                <p>There are several ways to do it, from numerical methods like gradient descent which involves derivatives and is more optimal for large data, to a very easy method called least squares which is pure algebra.</p>
+                <p>Hay varias formas de hacerlo, desde métodos numéricos como el descenso de gradiente que involucra derivadas y es más óptimo para grandes datos, hasta un método muy fácil llamado mínimos cuadrados que es álgebra pura.</p>
                 
-                <h3>Linear Regression Formulas</h3>
+                <h3>Fórmulas de Regresión Lineal</h3>
                 
                 <div class="formula">
                     y = a + bx
@@ -115,107 +115,107 @@
                     a = ȳ - bx̄
                 </div>
                 
-                <h3>What does each thing mean?</h3>
+                <h3>¿Qué significa cada cosa?</h3>
                 
-                <p>We have 3 formulas. I'm sure you already know what the first one is - that's right, it's the point-slope formula of a line. It's obvious, isn't it? We want to find a line. b is the slope, which makes the line rotate, so to speak. The direction the line points depends on the slope, and a is the y-intercept. With these parameters, we can draw infinite lines, and one of them must be ours.</p>
+                <p>Tenemos 3 fórmulas. Estoy seguro de que ya sabes qué es la primera - así es, es la fórmula punto-pendiente de una línea. Es obvio, ¿verdad? Queremos encontrar una línea. b es la pendiente, que hace girar la línea, por así decirlo. La dirección hacia donde apunta la línea depende de la pendiente, y a es la intersección con el eje y. Con estos parámetros, podemos dibujar infinitas líneas, y una de ellas debe ser la nuestra.</p>
                 
-                <p>We already know that with slope m and y-intercept a, we can have infinite lines, and one of them must be the one we're looking for.</p>
+                <p>Ya sabemos que con pendiente m e intersección a, podemos tener infinitas líneas, y una de ellas debe ser la que estamos buscando.</p>
                 
-                <p>If we look, we already have the formula for b and a, so we just need to do basic operations and voilà, we'll have our line that fits our data.</p>
+                <p>Si miramos, ya tenemos la fórmula para b y a, así que solo necesitamos hacer operaciones básicas y voilà, tendremos nuestra línea que se ajusta a nuestros datos.</p>
                 
-                <h3>How would you start?</h3>
+                <h3>¿Cómo empezarías?</h3>
                 
-                <p>If you notice, for a, you need b. So you simply calculate b first, then a, and finally your line equation.</p>
+                <p>Si te fijas, para a, necesitas b. Así que simplemente calculas b primero, luego a, y finalmente tu ecuación de línea.</p>
                 
-                <p>We know that x̄: is the mean of x, where x is a dataset.</p>
+                <p>Sabemos que x̄: es la media de x, donde x es un conjunto de datos.</p>
                 
-                <p>For example, if we have 3,5,2,1 → the mean or average is (3+5+2+1)/4. Why 4? Because it's the number of elements in my dataset.</p>
+                <p>Por ejemplo, si tenemos 3,5,2,1 → la media o promedio es (3+5+2+1)/4. ¿Por qué 4? Porque es el número de elementos en mi conjunto de datos.</p>
                 
                 <div class="regression-example">
-                    <h3>Linear Regression Example</h3>
-                    <p>Let's assume you have a list:</p>
+                    <h3>Ejemplo de Regresión Lineal</h3>
+                    <p>Supongamos que tienes una lista:</p>
                     <ul>
-                    <li><strong>x (hours studied)</strong> = [3,5,2,4,6,2]</li>
-                    <li><strong>y (grade obtained)</strong> = [7,9,6,8,10,5]</li>
+                    <li><strong>x (horas estudiadas)</strong> = [3,5,2,4,6,2]</li>
+                    <li><strong>y (calificación obtenida)</strong> = [7,9,6,8,10,5]</li>
                     </ul>
 
-                    <p>To understand linear regression, we'll first work with small datasets. The first thing you need to calculate is <strong>b</strong>. To do this, we calculate the mean of x and y:</p>
+                    <p>Para entender la regresión lineal, primero trabajaremos con conjuntos de datos pequeños. Lo primero que necesitas calcular es <strong>b</strong>. Para hacer esto, calculamos la media de x e y:</p>
                     <ul>
-                    <li>x(mean) = (3+5+2+4+6+2)/6 = 22/6 ≈ 3.6667</li>
-                    <li>y(mean) = (7+9+6+8+10+5)/6 = 45/6 = 7.5</li>
+                    <li>x(media) = (3+5+2+4+6+2)/6 = 22/6 ≈ 3.6667</li>
+                    <li>y(media) = (7+9+6+8+10+5)/6 = 45/6 = 7.5</li>
                     </ul>
 
-                    <h4>Step 2: Calculate the numerator</h4>
+                    <h4>Paso 2: Calcular el numerador</h4>
                     <p>
-                    Then, for each value in list x, we subtract the mean and multiply it by the corresponding value in y minus the mean of y:
+                    Luego, para cada valor en la lista x, restamos la media y lo multiplicamos por el valor correspondiente en y menos la media de y:
                     </p>
                     <p>
                     (3-3.6667)(7-7.5) + (5-3.6667)(9-7.5) + (2-3.6667)(6-7.5) + (4-3.6667)(8-7.5) + (6-3.6667)(10-7.5) + (2-3.6667)(5-7.5) ≈ 15
                     </p>
 
-                    <h4>Step 3: Calculate the denominator</h4>
+                    <h4>Paso 3: Calcular el denominador</h4>
                     <p>
-                    For each value in x, subtract the mean, square it, and sum them up:
+                    Para cada valor en x, resta la media, elévalo al cuadrado y súmalos:
                     </p>
                     <p>
                     (3-3.6667)² + (5-3.6667)² + (2-3.6667)² + (4-3.6667)² + (6-3.6667)² + (2-3.6667)² ≈ 13.3333
                     </p>
 
-                    <h4>Step 4: Calculate the slope b</h4>
+                    <h4>Paso 4: Calcular la pendiente b</h4>
                     <p>
-                    Divide the numerator by the denominator: b = 15 / 13.3333 ≈ 1.125
+                    Divide el numerador por el denominador: b = 15 / 13.3333 ≈ 1.125
                     </p>
 
-                    <h4>Step 5: Calculate the intercept a</h4>
+                    <h4>Paso 5: Calcular la intersección a</h4>
                     <p>
-                     a = y(mean) - b * x(mean) = 7.5 - (1.125 * 3.6667) ≈ 3.375
+                     a = y(media) - b * x(media) = 7.5 - (1.125 * 3.6667) ≈ 3.375
                     </p>
 
-                    <h4>Step 6: Regression line equation</h4>
+                    <h4>Paso 6: Ecuación de la línea de regresión</h4>
                     <p>
                     y = bx + a → y = 1.125x + 3.375
                     </p>
-                    <p>This is the optimal line that fits this data, and it allows us to predict the grade based on study hours.</p>
+                    <p>Esta es la línea óptima que se ajusta a estos datos, y nos permite predecir la calificación basada en las horas de estudio.</p>
                     </div>
                     
                     <div class="regression-prediction">
-                        <h3>Grade Prediction</h3>
-                        <p>Using the regression line equation we obtained:</p>
+                        <h3>Predicción de Calificación</h3>
+                        <p>Usando la ecuación de la línea de regresión que obtuvimos:</p>
                         <p><strong>y = 1.125x + 3.375</strong></p>
-                        <p>If we want to predict the grade for <strong>6 hours of study</strong>:</p>
-                        <p>y = 1.125 * 6 + 3.375 = 10.125 → approximately 10 points</p>
+                        <p>Si queremos predecir la calificación para <strong>6 horas de estudio</strong>:</p>
+                        <p>y = 1.125 * 6 + 3.375 = 10.125 → aproximadamente 10 puntos</p>
     
-                        <h4>Python Implementation:</h4>
+                        <h4>Implementación en Python:</h4>
                         <div class="visualization">
-                            <h4>Linear Regression Algorithm in Python</h4>
+                            <h4>Algoritmo de Regresión Lineal en Python</h4>
                             <pre><code>
-# Data
-x = [3, 5, 2, 4, 6, 2]  # Hours studied
-y = [7, 9, 6, 8, 10, 5]  # Grade obtained
+# Datos
+x = [3, 5, 2, 4, 6, 2]  # Horas estudiadas
+y = [7, 9, 6, 8, 10, 5]  # Calificación obtenida
 
-# Function to calculate mean
+# Función para calcular la media
 def mean(lst):
     return sum(lst) / len(lst)
 
-# Calculate means
+# Calcular medias
 x_mean = mean(x)
 y_mean = mean(y)
 
-# Calculate numerator and denominator for b
+# Calcular numerador y denominador para b
 numerator = sum((xi - x_mean) * (yi - y_mean) for xi, yi in zip(x, y))
 denominator = sum((xi - x_mean)**2 for xi in x)
 
-# Calculate slope b and intercept a
+# Calcular pendiente b e intersección a
 b = numerator / denominator
 a = y_mean - b * x_mean
 
-# Function to predict grade based on hours studied
+# Función para predecir calificación basada en horas estudiadas
 def predict(hours):
     return b * hours + a
 
-# Prediction for 6 hours of study
+# Predicción para 6 horas de estudio
 predicted_grade = predict(6)
-print(f"Prediction: {predicted_grade}")
+print(f"Predicción: {predicted_grade}")
                             </code></pre>
                         </div>
                     </div>
